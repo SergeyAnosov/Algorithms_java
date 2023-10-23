@@ -1,4 +1,5 @@
 rootProject.name = 'Algos_Examples'
 include 'bubble'
 include 'selection_sort'
+include 'insertion_sort'
 
