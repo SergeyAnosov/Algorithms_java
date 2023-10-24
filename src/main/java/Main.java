@@ -3,13 +3,19 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Insertion_sort s = new Insertion_sort();
+        final int arraySize = 200000;
 
-        int[] ar1 = {5, 7, 3, 1, 0, 10, 0};
-        int[] ar2 = {9, 7, 13, 1, -5, 10, 0, 17, 43};
+        int[] arr = new int[arraySize];
 
-        System.out.println(Arrays.toString(s.insertionSort(ar1)));
-        System.out.println("--------------------------");
-        System.out.println(Arrays.toString(s.insertionSort(ar2)));
+        for(int j = 0; j < arraySize; j++) // Заполнение массива
+        { // случайными числами
+            int n = (int) (Math.random() * (arraySize - 1));
+            arr[j] = n;
+        }
+        //System.out.println(Arrays.toString(arr));
+
+        InsertionSort s = new InsertionSort(); //bubble - 50s, selection - 18s, insertion - 2s.
+        s.reverseSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
