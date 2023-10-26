@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        final int arraySize = 200000;
+        final int arraySize = 20000;
 
         int[] arr = new int[arraySize];
 
@@ -15,7 +15,7 @@ public class Main {
         //System.out.println(Arrays.toString(arr));
 
         InsertionSort s = new InsertionSort(); //bubble - 50s, selection - 18s, insertion - 2s.
-        s.reverseSort(arr);
+        s.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }

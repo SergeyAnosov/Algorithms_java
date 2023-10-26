@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class InsertionSort {
 
     public int[] sort(int[] array) {
@@ -18,7 +20,7 @@ public class InsertionSort {
             // В освободившееся место вставляем вытащенное значение
             array[i + 1] = value;
         }
-        return array;
+        return noDups(array);
     }
 
 
@@ -40,6 +42,10 @@ public class InsertionSort {
             // В освободившееся место вставляем вытащенное значение
             array[i + 1] = value;
         }
-        return array;
+        return noDups(array);
+    }
+
+    private int[] noDups(int[] array) {
+        return Arrays.stream(array).distinct().toArray();
     }
 }
