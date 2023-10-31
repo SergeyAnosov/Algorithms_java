@@ -2,8 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ReverseApp
-{
+public class ReverseApp {
     public static void main(String[] args) throws IOException {
         String input, output;
         while(true) {
@@ -12,7 +11,7 @@ public class ReverseApp
             input = getString(); // Чтение строки с клавиатуры
             if( input.equals("") ) // Завершение, если [Enter]
                 break;
-            // Создание объекта Reverser
+
             Reverser theReverser = new Reverser(input);
             output = theReverser.doRev();
             System.out.println("Reversed: " + output);

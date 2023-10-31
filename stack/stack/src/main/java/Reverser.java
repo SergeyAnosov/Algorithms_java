@@ -1,9 +1,9 @@
-public class Reverser
-{
+public class Reverser {
     private String input; // Входная строка
     private String output; // Выходная строка
+
     public Reverser(String in) { // Конструктор
-    input = in;
+        input = in;
     }
 
     public String doRev() { // Перестановка символов
@@ -17,7 +17,7 @@ public class Reverser
 
         output = "";
         while( !theStack.isEmpty() ) {
-            char ch = (char) theStack.pop(); // Извлечение символа из стека
+            char ch = (char) theStack.pop();
             output = output + ch; // Присоединение к выходной строке
         }
         return output;

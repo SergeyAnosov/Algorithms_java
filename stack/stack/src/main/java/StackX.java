@@ -1,4 +1,4 @@
-class StackX {
+public class StackX {
     private final int maxSize;
     private final long[] stackArray;
     private int top; // Вершина стека
