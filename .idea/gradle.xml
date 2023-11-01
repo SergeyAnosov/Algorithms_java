@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bubble" />
             <option value="$PROJECT_DIR$/insertion_sort" />
+            <option value="$PROJECT_DIR$/queue" />
             <option value="$PROJECT_DIR$/selection_sort" />
             <option value="$PROJECT_DIR$/stack" />
             <option value="$PROJECT_DIR$/stack/stack" />
