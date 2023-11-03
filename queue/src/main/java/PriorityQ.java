@@ -15,21 +15,22 @@ public class PriorityQ {
     public void insert(long item) { // Вставка элемента
 
         int j;
-        if(nItems==0) // Если очередь пуста,
+        if(nItems==0) { // Если очередь пуста,
             queArray[nItems++] = item; // вставляем в ячейку 0
-        else // Если очередь содержит элементы
-        {
-            for(j=nItems-1; j>=0; j--) // Перебор в обратном направлении
-            {
-                if( item > queArray[j] ) // Если новый элемент больше,
-                    queArray[j+1] = queArray[j]; // сдвинуть вверх
-                else // Если меньше,
-                    break; // сдвиг прекращается
+        } else { // Если очередь содержит элементы
+
+            for(j = nItems - 1; j >= 0; j--) {// Перебор в обратном направлении
+
+                if( item > queArray[j] ) {// Если новый элемент больше,
+                    queArray[j + 1] = queArray[j]; // сдвинуть вверх
+                } else { // Если меньше,
+                    break;
+                } // сдвиг прекращается
             }
-            queArray[j+1] = item; // Вставка элемента
+            queArray[j + 1] = item; // Вставка элемента
             nItems++;
         }
-    } //
+    }
     //-------------------------------------------------------------
     public long remove()
     { return queArray[--nItems]; }
