@@ -1,5 +1,4 @@
-public class LinkList
-{
+public class LinkList {
     private Link first;
 
     public void LinkList() {
@@ -10,11 +9,6 @@ public class LinkList
         return (first==null);
     }
 
-    public void insertFirst(int id, double dd) {
-        Link newLink = new Link(id, dd);
-        newLink.next = first;
-        first = newLink;
-    }
 
     public Link deleteFirst() // Удаление первого элемента
     { // (предполагается, что список не пуст)

@@ -1,16 +1,12 @@
-public class Link
-{
-    public int iData;
-    public double dData;
+public class Link {
+    public long dData;
     public Link next;
 
-    public Link(int id, double dd) {
-
-        iData = id;
-        dData = dd;
-    }
+    public Link(long d) {
+        dData = d; }
 
     public void displayLink() {
-        System.out.print("{" + iData + ", " + dData + "} ");
+        System.out.print(dData + " ");
     }
+
 }
