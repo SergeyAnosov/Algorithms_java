@@ -1,49 +1,45 @@
 public class FirstLastList {
-    private Link first;
-    private Link last;
-
-    public FirstLastList() {
-        first = null;
+    private Link first; // Ссылка на первый элемент
+    private Link last; // Ссылка на последний элемент
+    // -------------------------------------------------------------
+    public FirstLastList() // Конструктор
+    {
+        first = null; // Список пока не содержит элементов
         last = null;
     }
+    // -------------------------------------------------------------
 
-    public boolean isEmpty() {
-        return first==null;
+    public boolean isEmpty() // true, если список пуст
+    { return first==null; }
+    // -------------------------------------------------------------
+    public void insertLast(long dd) // Вставка элемента в конец списка
+    {
+        Link newLink = new Link(dd); // Создание нового элемента
+        if( isEmpty() ) // Если список пуст,
+            first = newLink; // first --> newLink
+        else
+            last.next = newLink; // Старое значение last --> newLink
+        last = newLink; // newLink <-- last
     }
-
-    public void insertFirst(long dd) {
-        Link newLink = new Link(dd);
-        if( isEmpty() )
-            last = newLink;
-        newLink.next = first;
-        first = newLink;
-    }
-
-    public void insertLast(long dd) {
-        Link newLink = new Link(dd);
-        if( isEmpty() ) {
-            first = newLink;
-        } else {
-            last.next = newLink;
-            last = newLink;
-        }
-    }
-
-    public long deleteFirst() {
+    // -------------------------------------------------------------
+    public long deleteFirst() // Удаление первого элемента
+    { // (предполагается, что список не пуст)
         long temp = first.dData;
-        if(first.next == null)
-            last = null;
-        first = first.next;
+        if(first.next == null) // Сохранение ссылки
+            last = null; // null <-- last
+        first = first.next; // first --> старое значение next
         return temp;
     }
-
-    public void displayList() {
-        System.out.print("List (first-->last): ");
-        Link current = first;
-        while(current != null) {
-            current.displayLink();
-            current = current.next;
+    // -------------------------------------------------------------
+    public void displayList()
+    {
+        Link current = first; // От начала списка
+        while(current != null) // Перемещение до конца списка
+        {
+            current.displayLink(); // Вывод данных
+            current = current.next; // Переход к следующему элементу
         }
         System.out.println("");
     }
+// -------------------------------------------------------------
 }

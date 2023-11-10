@@ -1,16 +1,16 @@
 public class LinkListApp {
 
     public static void main(String[] args) {
-        FirstLastList theList = new FirstLastList();
-        theList.insertFirst(22); // Вставка в начало списка
-        theList.insertFirst(44);
-        theList.insertFirst(66);
-        theList.insertLast(11); // Вставка в конец списка
-        theList.insertLast(33);
-        theList.insertLast(55);
-        theList.displayList(); // Вывод содержимого списка
-        theList.deleteFirst(); // Удаление первых двух элементов
-        theList.deleteFirst();
-        theList.displayList(); // Повторный вывод
+        //----------------------------------------------------------------
+        LinkStack theStack = new LinkStack(); // Создание стека
+        theStack.push(20); // Вставка элементов
+        theStack.push(40);
+        theStack.displayStack(); // Вывод содержимого стека
+        theStack.push(60); // Вставка элементов
+        theStack.push(80);
+        theStack.displayStack(); // Вывод содержимого стека
+        theStack.pop();
+        theStack.pop();
+        theStack.displayStack();
     }
 }

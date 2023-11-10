@@ -15,9 +15,6 @@ dependencies {
     implementation project(':bubble')
     implementation project(':selection_sort')
     implementation project(':insertion_sort')
-    implementation(':stack')
-    implementation(':queue')
-    implementation(':LinkList')
 }
 
 test {

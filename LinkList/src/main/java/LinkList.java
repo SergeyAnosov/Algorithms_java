@@ -1,30 +1,31 @@
 public class LinkList {
     private Link first;
-
-    public void LinkList() {
-        first = null;
-    }
+    public LinkList() {
+        first = null; }
 
     public boolean isEmpty() {
-        return (first==null);
+        return (first == null);
     }
 
-
-    public Link deleteFirst() // Удаление первого элемента
-    { // (предполагается, что список не пуст)
-        Link temp = first; // Сохранение ссылки
-        first = first.next; // Удаление: first-->ссылка на второй элемент
-        return temp; // Метод возвращает ссылку
+    public void insertFirst(long dd) {
+        Link newLink = new Link(dd);
+        newLink.next = first;
+        first = newLink;
     }
 
-    public void displayList()  {
-        System.out.print("List (first-->last): ");
-        Link current = first; // От начала списка
-        while(current != null)  {
-            current.displayLink(); // Вывод данных
-            current = current.next; // Переход к следующему элементу
+    public long deleteFirst() {
+
+        Link temp = first;
+        first = first.next;
+        return temp.dData;
+    }
+
+    public void displayList() {
+        Link current = first;
+        while(current != null) {
+            current.displayLink();
+            current = current.next;
         }
         System.out.println("");
     }
-
 }
