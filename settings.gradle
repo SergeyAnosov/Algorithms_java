@@ -6,4 +6,5 @@ include 'stack:stack'
 findProject(':stack:stack')?.name = 'stack'
 include 'queue'
 include 'LinkList'
+include 'sortedList'
 
