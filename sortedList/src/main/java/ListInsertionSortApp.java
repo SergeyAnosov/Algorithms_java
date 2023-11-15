@@ -1,5 +1,7 @@
+import java.sql.SQLOutput;
+
 class ListInsertionSortApp {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int size = 10;
         // Создание массива
         Link[] linkArray = new Link[size];
@@ -24,5 +26,6 @@ class ListInsertionSortApp {
         for(int j=0; j<size; j++)
             System.out.print(linkArray[j].dData + " ");
         System.out.println("");
+        //aadsdf
     }
 }
