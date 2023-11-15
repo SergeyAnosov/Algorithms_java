@@ -4,13 +4,13 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LinkList" />
             <option value="$PROJECT_DIR$/bubble" />
+            <option value="$PROJECT_DIR$/doublyLinked" />
             <option value="$PROJECT_DIR$/insertion_sort" />
             <option value="$PROJECT_DIR$/queue" />
             <option value="$PROJECT_DIR$/selection_sort" />
