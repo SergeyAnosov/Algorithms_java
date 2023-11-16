@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/bubble" />
             <option value="$PROJECT_DIR$/doublyLinked" />
             <option value="$PROJECT_DIR$/insertion_sort" />
+            <option value="$PROJECT_DIR$/iterator" />
             <option value="$PROJECT_DIR$/queue" />
             <option value="$PROJECT_DIR$/selection_sort" />
             <option value="$PROJECT_DIR$/sortedList" />
