@@ -1,9 +1,4 @@
 public class TriangleNumber {
-    public static void main(String[] args) {
-        System.out.println(triangle(6));
-        System.out.println(recursionTriangle(6));
-
-    }
 
    public static int triangle(int n) {
         int total = 0;
