@@ -35,4 +35,11 @@ public class TriangleApp {
         return Integer.parseInt(s);
     }
 //--------------------------------------------------------------
+
+    int factorial(int n) {
+        if(n==0)
+            return 1;
+        else
+            return (n * factorial(n-1) );
+    }
 }
