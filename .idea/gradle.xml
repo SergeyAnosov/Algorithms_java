@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/sortedList" />
             <option value="$PROJECT_DIR$/stack" />
             <option value="$PROJECT_DIR$/stack/stack" />
+            <option value="$PROJECT_DIR$/towers" />
           </set>
         </option>
       </GradleProjectSettings>
