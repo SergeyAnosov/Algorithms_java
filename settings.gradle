@@ -11,4 +11,5 @@ include 'doublyLinked'
 include 'iterator'
 include 'recursion'
 include 'towers'
+include 'merge_sort'
 
