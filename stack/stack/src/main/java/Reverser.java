@@ -1,3 +1,4 @@
+/*
 public class Reverser {
     private String input; // Входная строка
     private String output; // Выходная строка
@@ -22,4 +23,4 @@ public class Reverser {
         }
         return output;
     }
-}
+}*/

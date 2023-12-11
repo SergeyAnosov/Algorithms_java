@@ -1,37 +1,28 @@
-public class StackX {
-    private final int maxSize;
-    private final long[] stackArray;
+class StackX {
+    private int maxSize; // Размер массива StackX
+    private Params[] stackArray;
     private int top; // Вершина стека
 
     //--------------------------------------------------------------
     public StackX(int s) {
-        maxSize = s;
-        stackArray = new long[maxSize];
-        top = -1; // Пока нет ни одного элемента
+        maxSize = s; // Определение размера массива
+        stackArray = new Params[maxSize]; // Создание массива
+        top = -1; // Массив пока не содержит элементов
     }
 
     //--------------------------------------------------------------
-    public void push(long j) { // Размещение элемента на вершине стека
-        stackArray[++top] = j; // Увеличение top, вставка элемента
+    public void push(Params p) { // Размещение элемента на вершине стека
+        stackArray[++top] = p; // Увеличение top, вставка элемента
     }
 
     //--------------------------------------------------------------
-    public long pop() {
-        return stackArray[top--];
+    public Params pop() {
+        return stackArray[top--]; // Обращение к элементу, уменьшение top
     }
 
     //--------------------------------------------------------------
-    public long peek() { // Чтение элемента с вершины стека
+    public Params peek() { // Чтение элемента на вершине стека
         return stackArray[top];
     }
-
-    //--------------------------------------------------------------
-    public boolean isEmpty() { // True, если стек пуст
-        return (top == -1);
-    }
-
-    //--------------------------------------------------------------
-    public boolean isFull() { // True, если стек полон
-        return (top == maxSize - 1);
-    }
+//--------------------------------------------------------------
 }

@@ -32,8 +32,7 @@ public class DArray {
     }
 
     //-----------------------------------------------------------
-    private void recMergeSort(long[] workSpace, int lowerBound,
-                              int upperBound) {
+    private void recMergeSort(long[] workSpace, int lowerBound, int upperBound) {
         if (lowerBound == upperBound) // Если только один элемент,
             return; // сортировка не требуется.
         else { // Поиск середины
@@ -48,22 +47,18 @@ public class DArray {
     }
 
     //-----------------------------------------------------------
-    private void merge(long[] workSpace, int lowPtr,
-                       int highPtr, int upperBound) {
+    private void merge(long[] workSpace, int lowPtr, int highPtr, int upperBound) {
         int j = 0;
         int lowerBound = lowPtr;
         int mid = highPtr - 1;
         int n = upperBound - lowerBound + 1; // Количество элементов
         while (lowPtr <= mid && highPtr <= upperBound)
-            if (theArray[lowPtr] < theArray[highPtr])
-                workSpace[j++] = theArray[lowPtr++];
+            if (theArray[lowPtr] < theArray[highPtr]) workSpace[j++] = theArray[lowPtr++];
             else
 
                 workSpace[j++] = theArray[highPtr++];
-        while (lowPtr <= mid)
-            workSpace[j++] = theArray[lowPtr++];
-        while (highPtr <= upperBound)
-            workSpace[j++] = theArray[highPtr++];
+        while (lowPtr <= mid) workSpace[j++] = theArray[lowPtr++];
+        while (highPtr <= upperBound) workSpace[j++] = theArray[highPtr++];
         for (j = 0; j < n; j++)
             theArray[lowerBound + j] = workSpace[j];
     }

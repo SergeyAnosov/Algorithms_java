@@ -1,3 +1,4 @@
+/*
 class BracketChecker {
     private String input; // Входная строка
     //--------------------------------------------------------------
@@ -41,3 +42,4 @@ class BracketChecker {
             System.out.println("Error: missing right delimiter");
     }//--------------------------------------------------------------
 }
+*/

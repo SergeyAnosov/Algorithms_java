@@ -1,3 +1,4 @@
+/*
 public class StackApp {
     public static void main(String[] args)     {
         StackX theStack = new StackX(10); // Создание нового стека
@@ -13,4 +14,4 @@ public class StackApp {
         }
         System.out.println("");
     }
-}
+}*/
