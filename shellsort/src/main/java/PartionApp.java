@@ -3,8 +3,8 @@ class PartitionApp {
         int maxSize = 16; // Размер массива
         ArrayPar arr; // Ссылка на массив
         arr = new ArrayPar(maxSize); // Создание массива
-        for (int j = 0; j < maxSize; j++) // Заполнение массива
-        { // случайными числами
+        for (int j = 0; j < maxSize; j++) { // Заполнение массива
+         // случайными числами
             long n = (int) (java.lang.Math.random() * 199);
             arr.insert(n);
         }

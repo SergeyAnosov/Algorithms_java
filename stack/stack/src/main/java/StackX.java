@@ -18,8 +18,7 @@ class StackX {
     }
 
     //--------------------------------------------------------------
-    public int pop()
-    {
+    public int pop() {
         return stackArray[top--];
     }
 
